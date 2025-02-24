@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Consulting Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <!-- Chatbot Icon -->
+    <div class="chat-bot_img" id="chat-bot" onclick="toggleChat()">
+        <img src="./Chat-unscreen.gif" alt="Chatbot Icon">
+    </div>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container" id="chatContainer">
+        <div class="chatbot-header" onclick="toggleChat()">
+            💬 Chat with Us
+        </div>
+        <div class="chatbot-body" id="chatBody">
+            <div class="chatbot-messages" id="chatMessages"></div>
+            <div class="chatbot-options">
+                <button onclick="sendMessage('services')">Our Services</button>
+                <button onclick="sendMessage('pricing')">Pricing & Plans</button>
+                <button onclick="sendMessage('contact')">Contact Info</button>
+                <button onclick="sendMessage('career')">Career Opportunities</button>
+                <button onclick="sendMessage('exit')">Exit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
